@@ -1,1 +1,29 @@
-.idea
+# Android Studio / IntelliJ IDEA Files
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+
+# Built application files
+/build
+/app/build
+*.apk
+*.aab
+
+# External native build files
+.externalNativeBuild
+.cxx
+*.iml
+*.class
+
+# Generated files
+/gen
+/out
+/bin
+
+# Gradle Caches
+.gradle-cache/
+.kotlin/
+.kapt_cache/
+.compose/
