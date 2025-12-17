@@ -3,7 +3,7 @@
 | 주차 | 주제 | 결과물 스크린샷 | 핵심 포인트 |
 |:---:|:---|:---:|:---|
 | **3주차** | **Compose Coffee** | <img src="https://github.com/user-attachments/assets/b1525c28-39cb-4a70-bfc9-e64c9e05b72f" width="100"> | Column, Row, Box 등 Compose 레이아웃을 활용한 UI 구조 설계 |
-| **4주차** | **프로필 카드** | - | Card, Row, Column 조합 및 Image CircleShape 처리 |
+| **4주차** | **프로필 카드** | <img src="https://github.com/user-attachments/assets/e6fb2607-ea70-4412-999b-ad639e37d483)"> | Card, Row, Column 조합 및 Image CircleShape 처리 |
 | **5주차** | **스톱워치** | <img src="https://github.com/user-attachments/assets/d3bb9587-95ff-4d64-ac7c-bb642bed6073" width="150"> | `remember`와 `LaunchedEffect`를 활용한 상태 관리 및 시간 로직 |
 | **6주차** | **버블버블 게임** | <img src="https://github.com/user-attachments/assets/81e2c69c-faf2-47df-9787-a09040204003" width="100"> | Canvas 그래픽 처리 및 터치 이벤트 인터랙션 |
 | **9주차** | **비만도 계산기** | - | TextField 입력 처리 및 BMI 공식 로직 구현 |
