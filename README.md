@@ -1,54 +1,48 @@
-
-## 주차별 학습
-
-| 주차 | 주제 | 결과물 스크린샷 | 핵심 포인트 |
-|:---:|:---|:---:|:---|
-| **3주차** | **Compose Coffee** | <img src="https://github.com/user-attachments/assets/b1525c28-39cb-4a70-bfc9-e64c9e05b72f" width="100"> | 컴포즈 레이아웃 구조 설계 및 기본 UI 구성 |
-| **4주차** | **프로필 카드** | <img src="https://github.com/user-attachments/assets/e6fb2607-ea70-4412-999b-ad639e37d483" width="120"> | Card 및 CircleShape 등 레이아웃 시스템 활용 |
-| **5주차** | **스톱워치** | <img src="https://github.com/user-attachments/assets/d3bb9587-95ff-4d64-ac7c-bb642bed6073" width="120"> | LaunchedEffect를 활용한 상태 관리와 시간 로직 |
-| **6주차** | **버블버블 게임** | <img src="https://github.com/user-attachments/assets/81e2c69c-faf2-47df-9787-a09040204003" width="100"> | Canvas 그래픽 처리 및 터치 인터랙션 실습 |
-| **7주차** | **클릭 게임(초판)** | <img src="https://github.com/user-attachments/assets/60ced477-4834-4df3-83ba-f226ae5a9ef0" width="100"> | `remember` + `mutableStateOf` 실시간 점수 관리 |
-| **8주차** | **음식 추천 앱** | <img src="https://github.com/user-attachments/assets/ad763a57-77c8-4a1a-a228-13188e9ed82e" width="80"> <img src="https://github.com/user-attachments/assets/d611042a-4ef7-4d0a-896f-bdfe12f31e9f" width="80"> | 랜덤 리스트 선택 및 State → UI 자동 업데이트 |
-| **9주차** | **비만도 계산기** | <img src="https://github.com/user-attachments/assets/cd75f03e-5fe3-45ba-9b23-9ee3b75d72d7" width="80"> <img src="https://github.com/user-attachments/assets/a4a0ca32-35fa-4e63-ba9b-de858cba6000" width="80"> | TextField 입력 처리 및 BMI 유틸리티 로직 구현 |
-| **10주차** | **페이크 스토어** | <img src="https://github.com/user-attachments/assets/0eb636dc-e06b-4ca0-9474-58ec6de7dbed" width="100"> | Retrofit + Coroutine 기반 외부 REST API 통신 |
-| **11주차** | **풍선 게임(최종)** | <img src="https://github.com/user-attachments/assets/c53a3236-dc6d-43a7-aaf3-6fce7e7f2ead" width="100"> | 더블탭 판정, 콤보 시스템, 애니메이션, 랭킹 시스템 |
+# 🚀 Jetpack Compose 과제 아카이브 (W03-W11)
+**개발자: 박은혁** 모바일 앱 프로그래밍 수업을 통해 학습한 안드로이드 컴포즈 실습 기록입니다.
 
 ---
 
-## 주요 프로젝트 상세 소개
+## 📂 주차별 프로젝트 히스토리
 
-### 10주차: 페이크 스토어(Fake Store API) 앱
-외부 REST API를 사용하여 실제 데이터를 불러오고 화면에 출력하는 과정을 학습했습니다.
-* **Retrofit + Coroutine:** 비동기 네트워크 통신을 통한 데이터 로드
-* **LazyColumn:** 대량의 상품 데이터를 효율적인 리스트로 구성
-* **Material3 Card:** 상품 이미지와 상세 정보를 깔끔한 카드 UI로 렌더링
+### 🟢 Phase 1: 컴포즈 기초 및 레이아웃 (W03-W04)
+* **W03 | Compose Coffee**
+  * 커피 주문 화면을 통해 기본적인 UI 컴포넌트(`Column`, `Row`, `Box`) 배치 학습
+  * <img src="https://github.com/user-attachments/assets/b1525c28-39cb-4a70-bfc9-e64c9e05b72f" width="120">
+* **W04 | Profile Card Project**
+  * `Material3` 디자인 시스템과 `Card` 레이아웃 적용 실습
+  * <img src="https://github.com/user-attachments/assets/e6fb2607-ea70-4412-999b-ad639e37d483" width="160">
 
-### 11주차: 풍선 더블클릭 게임 (최종 프로젝트)
-기존의 단순 클릭 게임을 완전히 업그레이드하여 실제 게임다운 기능을 대폭 추가했습니다.
+### 🔵 Phase 2: 상태 관리와 애니메이션 (W05-W07)
+* **W05 | 실시간 스톱워치**
+  * `LaunchedEffect`와 고수준 상태 관리를 통한 정밀한 시간 측정 로직 구현
+  * <img src="https://github.com/user-attachments/assets/d3bb9587-95ff-4d64-ac7c-bb642bed6073" width="160">
+* **W06-W07 | 버블 게임 & 클릭 게임**
+  * `Canvas` 그래픽 렌더링 및 `remember` 기반의 점수 상태 업데이트 실습
+  * <img src="https://github.com/user-attachments/assets/81e2c69c-faf2-47df-9787-a09040204003" width="120"> <img src="https://github.com/user-attachments/assets/60ced477-4834-4df3-83ba-f226ae5a9ef0" width="120">
 
-**1. 더블클릭 판정 시스템 (Double-Tap Detection)**
-* 200ms 이내 두 번 클릭 시 콤보 가산 로직을 통해 스킬 기반 게임성 확보
-
-**2. 시각적 피드백과 애니메이션**
-* `animateFloatAsState`를 활용하여 클릭 시 풍선이 '톡' 튀어 오르는(Scale) 효과 구현
-
-**3. 점수 & 랭킹 기능 (Top 5)**
-* 플레이 결과를 점수순으로 정렬하여 상위 5개의 기록을 관리하는 시스템 구축
+### 🟠 Phase 3: 데이터 활용 및 최종 프로젝트 (W08-W11)
+* **W08-W09 | 음식 추천 & BMI 계산기**
+  * 랜덤 로직 및 `TextField` 입력값에 따른 조건부 UI 변경 처리
+  * <img src="https://github.com/user-attachments/assets/ad763a57-77c8-4a1a-a228-13188e9ed82e" width="110"> <img src="https://github.com/user-attachments/assets/cd75f03e-5fe3-45ba-9b23-9ee3b75d72d7" width="110">
+* **W10 | Fake Store API 연동**
+  * `Retrofit` + `Coroutine`을 활용한 실제 공공 데이터를 리스트로 렌더링
+  * <img src="https://github.com/user-attachments/assets/0eb636dc-e06b-4ca0-9474-58ec6de7dbed" width="140">
+* **W11 | 풍선 더블클릭 게임 (최종)**
+  * **핵심 기능:** 200ms 더블탭 판정, 콤보 시스템, `animateFloatAsState` 스케일 애니메이션
+  * <img src="https://github.com/user-attachments/assets/c53a3236-dc6d-43a7-aaf3-6fce7e7f2ead" width="140">
 
 ---
 
-## 기술적으로 배운 점
-이 과정을 통해 Compose 앱 개발의 핵심 패턴들을 심도 있게 경험했습니다.
-* **정밀 입력 이벤트 처리:** Double-Tap 판정 등 사용자 인터랙션 설계
-* **네트워크 데이터 활용:** API 통신 및 데이터 파싱, 리스트 렌더링
-* **상태 기반 UI 업데이트:** State 변화에 따른 실시간 UI 최적화
-* **애니메이션 활용:** 애니메이션 API를 통한 사용자 경험(UX) 개선
+## ✍️ 학습 회고 및 기술적 성취
+이번 9주간의 실습을 통해 단순히 화면을 그리는 것을 넘어 **안드로이드 앱의 생명주기와 상태 흐름**을 깊이 이해하게 되었습니다.
+
+1. **상태 관리의 중요성:** `mutableStateOf`가 UI 리컴포지션에 미치는 영향을 직접 코드로 확인하며 데이터 흐름을 최적화하는 법을 배웠습니다.
+2. **사용자 경험(UX) 개선:** 풍선 게임에서 애니메이션 효과 하나가 앱의 몰입감을 얼마나 높이는지 실감했습니다.
+3. **네트워크 통신:** 비동기 프로그래밍인 코루틴을 사용하여 데이터 로딩 중 앱이 멈추지 않게 처리하는 기술을 습득했습니다.
 
 ---
 
-## Tech Stack
-- **Language:** Kotlin
-- **UI Framework:** Jetpack Compose (Material3)
-- **Networking:** Retrofit2, OkHttp
-- **Async:** Kotlin Coroutines
-- **IDE:** Android Studio
+## 🛠 환경 설정
+- **Kotlin** & **Jetpack Compose (Material3)**
+- **Retrofit2**, **OkHttp**, **Coroutines**
